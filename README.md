@@ -13,16 +13,16 @@ Here's a screenshot :
 
 ## Usage
 
-```groovy
+````groovy
 repositories {
     jcenter()
 }
 dependencies {
     compile 'giwi.android:android-network-graph:0.0.1'
 }
-```
+````
 
-```xml
+````xml
   <giwi.org.networkgraph.GraphSurfaceView
       android:id="@+id/mysurface"
       android:layout_width="match_parent"
@@ -34,9 +34,9 @@ dependencies {
       app:edgeColor="@android:color/holo_blue_light"
       app:nodeColor="@android:color/holo_blue_light"
       android:layout_margin="10dp"/>
-```
+````
 
-```java
+````java
 Node v1 = new SimpleNode("18");
 Node v2 = new SimpleNode("24");
 graph.getVertex().add(new Vertex(v1, ContextCompat.getDrawable(this, R.drawable.avatar)));
@@ -62,14 +62,14 @@ graph.addEdge(new SimpleEdge(v3, v1, "6"));
 
 GraphSurfaceView surface = (GraphSurfaceView) findViewById(R.id.mysurface);
 surface.init(graph);
-```
+````
 
 Setting colors programmatically
 
-```java
+````java
 graph.setDefaultColor(ContextCompat.getColor(this, android.R.color.black));
 graph.setEdgeColor(ContextCompat.getColor(this, android.R.color.holo_blue_light));
 graph.setNodeColor(ContextCompat.getColor(this, android.R.color.holo_blue_light));
 graph.setNodeBgColor(ContextCompat.getColor(this, android.R.color.white));
-```
+````
 
