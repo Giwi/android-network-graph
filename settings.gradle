@@ -1,1 +1,1 @@
-include ':app', ':org.giwi'
+include ':app', ':network-graph'

@@ -1,11 +1,13 @@
 apply plugin: 'com.android.application'
-
+repositories {
+   jcenter()
+}
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.1'
 
     defaultConfig {
-        applicationId "qaobee.com.networkgraph"
+        applicationId "org.giwi.android.networkgraph"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -17,11 +19,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        disable 'InvalidPackage'
+        disable 'GoogleAppIndexingWarning'
+        disable 'IconMissingDensityFolder'
+        disable 'IconDipSize'
+        abortOnError false
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    // compile project(path: ':org.giwi')
-    compile 'giwi.android:android-network-graph:0.0.1'
-
+    compile project(path: ':network-graph')
+   // compile 'giwi:android-network-graph:0.0.1@aar'
 }
