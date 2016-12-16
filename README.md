@@ -7,6 +7,8 @@ Network graph based on :
 - [https://github.com/andreiolaru-ro/AmIciTy-Grph](https://github.com/andreiolaru-ro/AmIciTy-Grph)
 - [https://github.com/andreiolaru-ro/net.xqhs.Graphs](https://github.com/andreiolaru-ro/net.xqhs.Graphs)
 
+[ ![Download](https://api.bintray.com/packages/giwi/android/android-network-graph/images/download.svg) ](https://bintray.com/giwi/android/android-network-graph/_latestVersion)
+
 Here's a screenshot :
 
 ![screen](http://i.imgur.com/kLq1mQ6.png)
