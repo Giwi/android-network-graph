@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="GraphSurfaceView">
+        <attr name="defaultColor" format="color|reference" />
+        <attr name="edgeColor" format="color|reference" />
+        <attr name="nodeColor" format="color|reference" />
+        <attr name="nodeBgColor" format="color|reference" />
+    </declare-styleable>
+</resources>
