@@ -7,7 +7,7 @@ Network graph based on :
 - [https://github.com/andreiolaru-ro/AmIciTy-Grph](https://github.com/andreiolaru-ro/AmIciTy-Grph)
 - [https://github.com/andreiolaru-ro/net.xqhs.Graphs](https://github.com/andreiolaru-ro/net.xqhs.Graphs)
 
-[ ![Download](https://api.bintray.com/packages/giwi/android/android-network-graph/images/download.svg) ](https://bintray.com/giwi/android/android-network-graph/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/giwi/android/android-network-graph/images/download.svg?version=0.0.1) ](https://bintray.com/giwi/android/android-network-graph/0.0.1/link)
 
 Here's a screenshot :
 
@@ -20,7 +20,7 @@ repositories {
     jcenter()
 }
 dependencies {
-    compile 'giwi.android:android-network-graph:0.0.1'
+    compile 'org.giwi:android-network-graph:0.0.1'
 }
 ````
 
