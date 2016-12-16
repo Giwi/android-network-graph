@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     graph.getVertex().add(new Vertex(v1, ContextCompat.getDrawable(this, R.drawable.avatar)));
     graph.getVertex().add(new Vertex(v2, ContextCompat.getDrawable(this, R.drawable.avatar)));
     graph.addEdge(new SimpleEdge(v1, v2, "12"));
-/*
+
     Node v3 = new SimpleNode("7");
     graph.getVertex().add(new Vertex(v3, ContextCompat.getDrawable(this, R.drawable.avatar)));
     graph.addEdge(new SimpleEdge(v2, v3, "23"));
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     graph.getVertex().add(new Vertex(v1, ContextCompat.getDrawable(this, R.drawable.avatar)));
     graph.addEdge(new SimpleEdge(v1, v3, "36"));
     graph.addEdge(new SimpleEdge(v3, v1, "6"));
-*/
+
     GraphSurfaceView surface = (GraphSurfaceView) findViewById(R.id.mysurface);
     surface.init(graph);
 
