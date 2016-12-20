@@ -96,6 +96,11 @@
     <orderEntry type="library" exported="" name="appcompat-v7-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-25.1.0" level="project" />
     <orderEntry type="module" module-name="network-graph" exported="" />
-    <orderEntry type="library" exported="" name="network-graph-unspecified" level="project" />
+    <orderEntry type="library" exported="" name="Logging" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-25.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Config" level="project" />
+    <orderEntry type="library" exported="" name="log4j-1.2.16" level="project" />
+    <orderEntry type="library" exported="" name="Graphs" level="project" />
+    <orderEntry type="library" exported="" name="commons-collections4-4.0" level="project" />
   </component>
 </module>

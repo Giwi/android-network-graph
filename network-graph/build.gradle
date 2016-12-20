@@ -1,5 +1,12 @@
 apply plugin: 'com.android.library'
+task generateSources (type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
 
+artifacts {
+    archives generateSources
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
