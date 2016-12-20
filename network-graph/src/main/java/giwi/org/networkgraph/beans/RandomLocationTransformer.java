@@ -26,50 +26,48 @@ import java.util.Random;
  * the first time they are accessed.
  *
  * @param <V> the type parameter
- *
  * @author Tom Nelson
  */
 public class RandomLocationTransformer<V> implements Transformer<V, Point2D> {
 
-  /**
-   * The D.
-   */
-  private Dimension d;
+    /**
+     * The D.
+     */
+    private Dimension d;
 
-  /**
-   * The Random.
-   */
-  private Random random;
+    /**
+     * The Random.
+     */
+    private Random random;
 
-  /**
-   * Creates an instance with the specified size which uses the current time
-   * as the random seed.
-   *
-   * @param d the d
-   */
-  public RandomLocationTransformer(Dimension d) {
-    this(d, new Date().getTime());
-  }
+    /**
+     * Creates an instance with the specified size which uses the current time
+     * as the random seed.
+     *
+     * @param d the d
+     */
+    public RandomLocationTransformer(Dimension d) {
+        this(d, new Date().getTime());
+    }
 
-  /**
-   * Creates an instance with the specified dimension and random seed.
-   *
-   * @param d    the d
-   * @param seed the seed
-   */
-  private RandomLocationTransformer(final Dimension d, long seed) {
-    this.d = d;
-    this.random = new Random(seed);
-  }
+    /**
+     * Creates an instance with the specified dimension and random seed.
+     *
+     * @param d    the d
+     * @param seed the seed
+     */
+    private RandomLocationTransformer(final Dimension d, long seed) {
+        this.d = d;
+        this.random = new Random(seed);
+    }
 
-  /**
-   * Transform point 2 d.
-   *
-   * @param v the v
-   *
-   * @return the point 2 d
-   */
-  public Point2D transform(V v) {
-    return new Point2D(random.nextDouble() * d.width, random.nextDouble() * d.height);
-  }
+    /**
+     * Transform point 2 d.
+     *
+     * @param v the v
+     * @return the point 2 d
+     */
+    public Point2D transform(V v) {
+        return new Point2D(random.nextDouble() * d.width, random.nextDouble() * d.height);
+    }
 }

@@ -3,55 +3,108 @@ package giwi.org.networkgraph.beans;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Network graph.
+ */
 public class NetworkGraph extends net.xqhs.graphs.graph.SimpleGraph {
 
-  private List<Vertex> vertex = new ArrayList<>();
+    private List<Vertex> vertex = new ArrayList<>();
 
-  private int defaultColor = android.R.color.black;
+    private int defaultColor = android.R.color.black;
 
-  private int edgeColor = android.R.color.holo_blue_light;
+    private int edgeColor = android.R.color.holo_blue_light;
 
-  private int nodeColor = android.R.color.holo_blue_light;
+    private int nodeColor = android.R.color.holo_blue_light;
 
-  private int nodeBgColor = android.R.color.white;
+    private int nodeBgColor = android.R.color.white;
 
-  public List<Vertex> getVertex() {
-    return vertex;
-  }
+    /**
+     * Gets vertex.
+     *
+     * @return the vertex
+     */
+    public List<Vertex> getVertex() {
+        return vertex;
+    }
 
-  public void setVertex(final List<Vertex> vertex) {
-    this.vertex = vertex;
-  }
+    /**
+     * Sets vertex.
+     *
+     * @param vertex the vertex
+     */
+    public void setVertex(final List<Vertex> vertex) {
+        this.vertex = vertex;
+    }
 
-  public int getDefaultColor() {
-    return defaultColor;
-  }
+    /**
+     * Gets default color.
+     *
+     * @return the default color
+     */
+    public int getDefaultColor() {
+        return defaultColor;
+    }
 
-  public void setDefaultColor(final int defaultColor) {
-    this.defaultColor = defaultColor;
-  }
+    /**
+     * Sets default color.
+     *
+     * @param defaultColor the default color
+     */
+    public void setDefaultColor(final int defaultColor) {
+        this.defaultColor = defaultColor;
+    }
 
-  public int getEdgeColor() {
-    return edgeColor;
-  }
+    /**
+     * Gets edge color.
+     *
+     * @return the edge color
+     */
+    public int getEdgeColor() {
+        return edgeColor;
+    }
 
-  public void setEdgeColor(final int edgeColor) {
-    this.edgeColor = edgeColor;
-  }
+    /**
+     * Sets edge color.
+     *
+     * @param edgeColor the edge color
+     */
+    public void setEdgeColor(final int edgeColor) {
+        this.edgeColor = edgeColor;
+    }
 
-  public int getNodeColor() {
-    return nodeColor;
-  }
+    /**
+     * Gets node color.
+     *
+     * @return the node color
+     */
+    public int getNodeColor() {
+        return nodeColor;
+    }
 
-  public void setNodeColor(final int nodeColor) {
-    this.nodeColor = nodeColor;
-  }
+    /**
+     * Sets node color.
+     *
+     * @param nodeColor the node color
+     */
+    public void setNodeColor(final int nodeColor) {
+        this.nodeColor = nodeColor;
+    }
 
-  public int getNodeBgColor() {
-    return nodeBgColor;
-  }
+    /**
+     * Gets node bg color.
+     *
+     * @return the node bg color
+     */
+    public int getNodeBgColor() {
+        return nodeBgColor;
+    }
 
-  public void setNodeBgColor(final int nodeBgColor) {
-    this.nodeBgColor = nodeBgColor;
-  }
+    /**
+     * Sets node bg color.
+     *
+     * @param nodeBgColor the node bg color
+     */
+    public void setNodeBgColor(final int nodeBgColor) {
+        this.nodeBgColor = nodeBgColor;
+    }
 }
